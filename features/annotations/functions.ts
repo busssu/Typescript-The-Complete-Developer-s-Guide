@@ -40,3 +40,31 @@ const throwThirdError = (message: string): void => {
     throw new Error(message);
   }
 };
+
+const forecast = {
+  date: new Date(),
+  weather: 'sunny',
+};
+
+const logWeather = (forecast: { date: Date; weather: string }): void => {
+  console.log(forecast.date);
+  console.log(forecast.weather);
+};
+logWeather(forecast);
+
+const todaysWeather = {
+  date: new Date(),
+  weather: 'sunny',
+};
+
+const logTodaysWeather = ({
+  date,
+  weather,
+}: {
+  date: Date;
+  weather: string;
+}): void => {
+  console.log(date);
+  console.log(weather);
+};
+logTodaysWeather(todaysWeather);
