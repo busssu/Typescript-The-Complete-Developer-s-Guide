@@ -14,3 +14,10 @@ carMakers.push(100); // Yanlnızca string eklenmesi gereken bir dizi olduğunu b
 carMakers.map((car: string): string => {
   return car.toUpperCase();
 });
+
+// Flexible Types
+// const importantDates: (Date | string)[] = [new Date()];
+const importantDates: (Date | string)[] = [];
+importantDates.push('2030-10-10');
+importantDates.push(new Date());
+importantDates.push(100); // Bu dizi ne tarih ne de string dir bu yüzden hata verir.
