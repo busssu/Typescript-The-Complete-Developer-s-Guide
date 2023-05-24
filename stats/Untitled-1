@@ -1,0 +1,20 @@
+// NOTHING TO DO WITH GENERICS
+
+/* const add = (a: number, b: number): number => {
+  return a + b;
+};
+
+add(10, 1);
+add(10, 2);
+add(10, 3);
+ */
+
+class HoldAnything<TypeOfData> {
+  data: TypeOfData;
+}
+
+const holdNumber = new HoldAnything<number>();
+holdNumber.data = 123;
+
+const holdString = new HoldAnything<string>();
+holdString.data = 'asdfl';
